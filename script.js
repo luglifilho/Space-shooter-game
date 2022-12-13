@@ -68,7 +68,7 @@ function moveLaser(laser) {
         let xPosition = parseInt(laser.style.left);
         let aliens = document.querySelectorAll('.alien');
 
-        aliens.forEach((alien) => { //comparando se cada alien foi atingido, se sim, troca o src da imagem
+        aliens.forEach((alien) => { 
             if(checkLaserCollision(laser, alien)) {
                 alien.src = 'img/explosion.png';
                 alien.classList.remove('alien');
@@ -85,10 +85,10 @@ function moveLaser(laser) {
     }, 10);
 }
 
-//função para criar inimigos aleatórios
+
 function createAliens() {
     let newAlien = document.createElement('img');
-    let alienSprite = aliensImg[Math.floor(Math.random() * aliensImg.length)]; //sorteio de imagens
+    let alienSprite = aliensImg[Math.floor(Math.random() * aliensImg.length)]; 
     newAlien.src = alienSprite;
     newAlien.classList.add('alien');
     newAlien.classList.add('alien-transition');
@@ -98,7 +98,7 @@ function createAliens() {
     moveAlien(newAlien);
 }
 
-//função para movimentar os inimigos
+
 function moveAlien(alien) {
     let moveAlienInterval = setInterval(() => {
         let xPosition = parseInt(window.getComputedStyle(alien).getPropertyValue('left'));
@@ -114,7 +114,7 @@ function moveAlien(alien) {
     }, 30);
 }
 
-//função para  colisão
+
 function checkLaserCollision(laser, alien) {
     let laserTop = parseInt(laser.style.top);
     let laserLeft = parseInt(laser.style.left);
@@ -133,7 +133,7 @@ function checkLaserCollision(laser, alien) {
     }
 }
 
-//inicio do jogo
+
 startButton.addEventListener('click', (event) => {
     playGame();
 })
@@ -149,7 +149,6 @@ function playGame() {
 
 
 
-//função de game over
 function gameOver() {
     window.removeEventListener('keydown', flyShip);
     clearInterval(alienInterval);
