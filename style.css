@@ -65,11 +65,35 @@ body {
     opacity: 0;
 }
 .score{
-   font-size: 30px;
+   font-size: 20px;
    margin: 10px;
    font-style:initial;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    position: relative;
    right: 250px;
+   height: 600px;
+   width: 600px;
 
 }
+.comands{
+    font-size: 20px;
+    margin: 10px;
+    font-style:initial;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    
+ }
+ .comands1 {
+    margin-top: 0;
+    margin-right: 10px;
+ }
+ .comands2 {
+    margin-top: 0;
+    margin-left: 10px;
+ }
+
+
+
