@@ -88,12 +88,27 @@ body {
  }
  .comands1 {
     margin-top: 0;
-    margin-right: 10px;
+    margin-right: 20px;
+    
+ }
+ .comands1 img {
+    width: 70px;
+    height: 50px;
+    padding: 0 0 0 45px; 
+ }
+ .comands2 img {
+    width: 110px;
+    height: 25px;
+    padding: 0 0 0 20px; 
  }
  .comands2 {
+    
     margin-top: 0;
-    margin-left: 10px;
+    margin-left: 20px;
+    
  }
+
+
 
 
 
